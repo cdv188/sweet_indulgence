@@ -1,57 +1,87 @@
 # 🍰 Sweet Indulgence Web Application
 
-**Sweet Indulgence** is a web-based kiosk system built with **PHP**, **JavaScript**, **HTML/CSS**, **Bootstrap**, and **Composer**.  
-It allows customers to place dessert or pastry orders and automatically generates a **recipe/receipt**. The **admin dashboard** tracks, confirms, and manages incoming orders.
+**Sweet Indulgence** is a kiosk-style web application for ordering desserts, built using **PHP**, **JavaScript**, **HTML/CSS**, **Bootstrap**, and **Composer**.  
+Customers can place orders and receive a recipe/receipt. Admins can track, manage, and download order records through an administrative dashboard.
 
 ---
 
 ## 🧾 Key Features
 
 ### 🧍 Customer Side
-- Browse the digital menu (cakes, pastries, desserts)
-- Place an order via kiosk-style UI
-- Instantly generate and view a **recipe/receipt**
-- Responsive design with Bootstrap
+- Browse products and add to cart
+- Place and update orders
+- View and download receipt
+- Contact support via contact form
 
 ### 🛠️ Admin Side
-- View and manage all customer orders
-- Confirm, track, or cancel orders
-- Download receipts for record-keeping
-- Admin authentication (if implemented)
+- Add, delete, or update products
+- View, confirm, or complete orders
+- Delete messages and download order records
+- Admin login dashboard
 
 ---
 
 ## 🧰 Tech Stack
 
-- **PHP** – Backend scripting
+- **PHP** – Server-side logic
 - **Composer** – Dependency management
-- **JavaScript** – Client-side functionality
-- **Bootstrap** – Responsive and styled UI
-- **HTML/CSS** – Webpage layout and styling
-- **MySQL** – Database for storing orders and menu items (assumed)
+- **JavaScript** – Client-side interactivity
+- **Bootstrap** – Responsive UI
+- **HTML/CSS** – Markup and styling
+- **MySQL** – Data storage
 
 ---
 
-## 🗂️ Project Structure (Example)
+## 🗂️ Folder Structure
 
 ```
-sweet_indulgence/
+SWEET_INDULGENCE/
 │
-├── customer/              # Customer-side interface
-│   ├── index.php          # Kiosk order page
-│   ├── receipt.php        # Displays generated recipe
-│   └── assets/            # Images, scripts, styles
+├── Admin/                      # Admin dashboard and functionality
+│   ├── add.php
+│   ├── admin.php
+│   ├── change.php
+│   ├── complete_order.php
+│   ├── delete_message.php
+│   ├── delete_order.php
+│   ├── delete.php
+│   ├── deletetall.php
+│   ├── download_records.php
+│   ├── message.php
+│   ├── order.php
+│   └── records.php
 │
-├── admin/                 # Admin-side dashboard
-│   ├── orders.php         # View/manage orders
-│   ├── receipt-download.php  # Download receipt PDF
-│   └── confirm-order.php  # Order confirmation handler
+├── User/                       # User/customer-related functionality
+│   ├── cart.php
+│   ├── change-order.php
+│   ├── checkout.php
+│   ├── contactUs.php
+│   ├── process_order.php
+│   └── products.php
 │
-├── includes/              # Reusable PHP scripts (DB, sessions)
-├── vendor/                # Composer-managed packages
-├── composer.json          # Composer configuration
-├── database.sql           # Database schema and sample data
-└── README.md              # Project readme
+├── buynow/
+│   └── product.php             # Buy-now style product order page
+│
+├── logo/                       # Logo image files
+│
+├── products/                   # Product image uploads
+│
+├── style/                      # CSS stylesheets
+│
+├── upload-img/                 # Image upload handler/scripts
+│
+├── vendor/                     # Composer dependencies
+│
+├── admin.php                   # Admin login page
+├── composer.json               # Composer configuration
+├── composer.lock
+├── index.php                   # Landing page
+├── login.sql                   # SQL schema for login
+├── logout.php
+├── oop.php                     # Object-oriented PHP code (helper/functions)
+├── pdf.php                     # PDF generation for receipts
+├── register.php                # User registration page
+└── update.php                  # Order or profile update handler
 ```
 
 ---
@@ -70,10 +100,10 @@ composer install
 ```
 
 ### 3. Set Up the Database
-- Import `database.sql` using phpMyAdmin or MySQL CLI
+- Import `login.sql` into your MySQL database using phpMyAdmin or CLI
 
-### 4. Configure Database Connection
-Edit your connection file (e.g., `includes/db.php`):
+### 4. Configure the Database Connection
+Edit your database connection file (e.g., `oop.php` or any included config file):
 ```php
 $host = "localhost";
 $user = "root";
@@ -81,22 +111,21 @@ $pass = "";
 $dbname = "sweet_indulgence";
 ```
 
-### 5. Run the App
-- Place the project in your web server directory (e.g., `htdocs` in XAMPP)
-- Access it in your browser:
+### 5. Run the Application
+- Place the project in your server directory (e.g., `htdocs` for XAMPP)
+- Access via browser:
   ```
-  http://localhost/sweet_indulgence/customer/
-  http://localhost/sweet_indulgence/admin/
+  http://localhost/sweet_indulgence/
   ```
 
 ---
 
 ## 📥 Contribution
 
-Contributions are welcome! Feel free to fork, open issues, or submit pull requests.
+Contributions are welcome! Fork the repo, make changes, and submit pull requests.
 
 ---
 
 ## 📄 License
 
-This project is open-source. Use and modify it freely to fit your bakery or dessert business needs.
+This project is open-source and freely available for modification and personal/commercial use.

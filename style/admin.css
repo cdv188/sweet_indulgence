@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+.nav{
+  background-color: #FFEAD0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  padding: 10px 0;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+}
+
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+nav ul li a:hover{
+  color: #DD3F2F;
+}
+
+/*specials*/
+.specials{
+  text-align: center;
+}
+.specials h1{
+  font-size: 40px;
+}
+.specials p{
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.specials{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.adds{
+  background-color: #FFFFFF;
+}
+.special-lists .cart{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.special-lists ul {
+  list-style: none;
+}
+.special-lists ul li input {
+  text-align: center;
+  font-size: 20px;
+}
+.special-lists ul li h4{
+  padding: 10px;
+  color: #DD3F2F;
+
+}
+.check{
+  width: 100px;
+}
+.row-add{
+  display: flex;
+  justify-content: center;
+    align-items: center;
+}
+
+.special-lists li {
+  margin: 0 20px 20px 20px;
+  padding: 10px 10px 20px 10px;
+  background-color: f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.special-lists li img {
+  max-width: 100px;
+  height: 70%;
+  border-radius: 10px;
+}
+.special-lists li button{
+  background-color: #DD3F2F;
+  border: none;
+  font-size: 15px;
+  padding: 5px;
+  color: #FFFFFF;
+  width: 60px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 5px;
+  
+}
+.special-lists li button:hover{
+  color: black;
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  background-color: #FFEAD0;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+}
+.add{
+  background-color: #DD3F2F;
+  border: none;
+  font-size: 15px;
+  padding: 5px;
+  color: #FFFFFF;
+  /*width: 120px;*/
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px 10px;
+}
+.add{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.product{
+  width: 50px;
+}
+textarea {
+  width: 30%;
+  height: 80px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+a.add {
+    text-decoration: none;
+}
+.delete{
+  background-color: #DD3F2F;
+  border: none;
+  font-size: 15px;
+  padding: 5px;
+  color: #FFFFFF;
+  width: 120px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px 0;
+}
+.delete{
+  margin-top: 5px;
+}
+a.add:hover{
+  color: black;
+}
+.order-list{
+  display: flex;
+  width: 100%;
+}

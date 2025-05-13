@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/*nav bar*/
+.nav{
+  background-color: #FFEAD0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+}
+.nav .logo{
+  width: 150px;
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  align-items: center;
+  padding: 10px 0;
+}
+nav{
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+nav ul li a:hover{
+  color: #DD3F2F;
+}
+
+/*poduct container*/
+.boxx {
+  position: relative;
+  margin-top: 40px;
+}
+.specials{
+  position:absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  max-width: 1000px;
+}
+.specials h1{
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+.specials h4{
+  font-size: 25px;
+}
+.specials p{
+  margin: 0 0 10px 0;
+  padding: 10px 0;
+  font-size: 15px;
+}
+
+
+.special-lists ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.special-lists ul {
+  list-style: none;
+}
+.special-lists ul li h4{
+  margin-top: 10px;
+  color: #DD3F2F;
+}
+.crop{
+  
+}
+.special-lists ul li img{
+  margin-right: 20px;
+  width: 300px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.special-lists li {
+  display: inline;
+  margin: 0 20px 20px 20px;
+  padding: 10px 10px 20px 10px;
+  background-color: f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  
+}
+.special-lists li button{
+  background-color: #DD3F2F;
+  border: none;
+  font-size: 15px;
+  padding: 5px;
+  color: #FFFFFF;
+  width: 120px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+.special-lists li button:hover{
+  color: black;
+}
+
+
+/*Footer*/
+footer {
+  margin-top: auto;
+  width: 100%;
+  background-color: #FFEAD0;
+  color: black;
+  text-align: center;
+  padding: 10px 0;
+}
